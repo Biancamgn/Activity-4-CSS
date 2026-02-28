@@ -3,30 +3,25 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Welcome!</title>
+  <title>Bianca Manganaan — Portfolio V1</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style-v1.css">
 </head>
 <body>
 
-  <!-- Mobile nav toggle (visible < 1200px) -->
-  <button class="mobile-nav-toggle" aria-label="Toggle navigation">
-    <i class="bi bi-list"></i>
-  </button>
-
-  <header id="header" class="header d-flex flex-column">
+  <!-- SIDEBAR -->
+  <header id="header" class="header">
     <div class="profile-img">
       <img src="assets/profile.jpg" alt="Bianca Manganaan">
     </div>
-    <a href="#" class="logo d-flex align-items-center justify-content-center">
+    <div class="logo">
       <h1 class="sitename">Bianca Manganaan</h1>
-    </a>
+    </div>
     <div class="tagline">Computer Engineer</div>
     <div class="divider"></div>
-    <div class="social-links text-center">
+    <div class="social-links">
       <a href="#" title="Facebook"><i class="bi bi-facebook"></i></a>
       <a href="#" title="Instagram"><i class="bi bi-instagram"></i></a>
       <a href="#" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
@@ -47,24 +42,23 @@
 
   <main class="main">
 
+    <!-- HERO -->
     <section id="home" class="hero section">
       <div class="dot-grid"></div>
       <img src="assets/homepage.jpg" alt="" class="hero-bg">
-      <div class="container text-center">
+      <div class="container">
         <h2>Bianca Louise Manganaan</h2>
         <p>I'm a <span>Computer Engineering Student</span></p>
       </div>
-      <div class="hero-scroll">scroll</div>
     </section>
 
+    <!-- ABOUT -->
     <section id="about" class="about section">
-      <div class="container section-title">
-        <h2>About</h2>
-      </div>
+      <div class="container section-title"><h2>About</h2></div>
       <div class="container">
         <div class="row gy-4 justify-content-center">
           <div class="col-lg-4">
-            <img src="assets/profile.jpg" class="img-fluid rounded" alt="Bianca Manganaan">
+            <img src="assets/profile.jpg" class="img-fluid" alt="Bianca Manganaan">
           </div>
           <div class="col-lg-8 content">
             <h2>Hi! Welcome to my Portfolio</h2>
@@ -85,19 +79,18 @@
                 </ul>
               </div>
             </div>
-            <p class="py-3">Beyond the world of circuits and code, I am deeply passionate about the arts. I express my creativity through film, photography, and video editing, hobbies that have taught me that attention to detail is just as important in art as it is in cybersecurity. To keep my mind sharp and my body active, I play badminton, which helps me maintain focus and discipline. My goal is to build a career where technical innovation and creative vision go hand in hand.</p>
-            
+            <p class="py-3">Beyond the world of circuits and code, I am deeply passionate about the arts. I express my creativity through film, photography, and video editing, hobbies that have taught me that attention to detail is just as important in art as it is in cybersecurity. To keep my mind sharp and my body active, I play badminton, which helps me maintain focus and discipline.</p>
             <div class="text-center text-lg-start">
               <a href="resume/resume.html" class="btn-resume" target="_blank">
                 <i class="bi bi-file-earmark-person"></i> View Full Resume
               </a>
             </div>
-
           </div>
         </div>
       </div>
     </section>
 
+    <!-- WORKS -->
     <section id="works" class="works section light-background">
       <div class="container section-title">
         <h2>Works</h2>
@@ -109,7 +102,6 @@
             <div class="portfolio-content">
               <img src="assets/pokemon.png" alt="">
               <div class="portfolio-info">
-                <span class="portfolio-number">01</span>
                 <h4>UDP Pokemon Game</h4>
                 <p>Designed and implemented a multiplayer Pokemon game using UDP networking</p>
               </div>
@@ -119,7 +111,6 @@
             <div class="portfolio-content">
               <img src="assets/payroll.jpg" alt="">
               <div class="portfolio-info">
-                <span class="portfolio-number">02</span>
                 <h4>Payroll Management System</h4>
                 <p>Developed a comprehensive payroll management system with employee data handling and salary calculations</p>
               </div>
@@ -129,7 +120,6 @@
             <div class="portfolio-content">
               <img src="assets/voltage.png" alt="">
               <div class="portfolio-info">
-                <span class="portfolio-number">03</span>
                 <h4>Voltage Regulator</h4>
                 <p>Designed and implemented a voltage regulator circuit using operational amplifiers</p>
               </div>
@@ -139,6 +129,7 @@
       </div>
     </section>
 
+    <!-- EXPERIENCE -->
     <section id="experience" class="experience section">
       <div class="container section-title">
         <h2>Experience</h2>
@@ -147,7 +138,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-6">
-            <h3 class="resume-title">Professional Experience</h3>
+            <h3 class="resume-title">Professional</h3>
             <div class="resume-item">
               <h4>Head of Finance</h4>
               <h5>2024 - Present</h5>
@@ -170,7 +161,7 @@
             </div>
           </div>
           <div class="col-lg-6">
-            <h3 class="resume-title">Project Experience</h3>
+            <h3 class="resume-title">Projects</h3>
             <div class="resume-item">
               <h4>UDP Pokemon Game</h4>
               <h5>2025</h5>
@@ -186,8 +177,8 @@
               <h5>2023</h5>
               <p><em>Academic Project</em></p>
               <ul>
-                <li>Developed a comprehensive payroll management system with employee data handling and salary calculations</li>
-                <li>Implemented database management and user interface design using C# and SQL</li>
+                <li>Developed a comprehensive payroll management system</li>
+                <li>Implemented database management using C# and SQL</li>
                 <li>Managed the development of the database schema and backend logic</li>
               </ul>
             </div>
@@ -196,6 +187,7 @@
       </div>
     </section>
 
+    <!-- EDUCATION -->
     <section id="education" class="education section light-background">
       <div class="container section-title">
         <h2>Education</h2>
@@ -207,7 +199,7 @@
             <div class="resume-item">
               <h4>Bachelor of Science in Computer Engineering minor in Cybersecurity</h4>
               <h5>2021 - Present</h5>
-              <p><em>Your University, Manila, Philippines</em></p>
+              <p><em>De La Salle University Manila, Philippines</em></p>
               <p>Relevant coursework: Data Structures and Algorithms, Digital Systems Design, Electronics Engineering, Computer Networks, Database Management, Machine Learning Fundamentals.</p>
               <ul>
                 <li>Dean's Lister</li>
@@ -227,23 +219,22 @@
             </div>
             <div class="resume-item">
               <h4>Junior High School</h4>
-              <h5>2016-2020</h5>
+              <h5>2016 - 2020</h5>
               <p><em>Benedictine Institute of Learning, Philippines</em></p>
-              <p>Completed basic education with high Honors</p>
+              <p>Completed basic education with High Honors.</p>
               <ul>
                 <li>High Honors</li>
-                <li>Vice President of the Student Government (2019-2020)</li>
-                <li>Student Photojournalist of the School Publication (2018-2020)</li>
+                <li>Vice President of the Student Government (2019–2020)</li>
+                <li>Student Photojournalist of the School Publication</li>
                 <li>Vice President of the IT Club</li>
-                <li>Badminton Varsity Player</li>
               </ul>
-            </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- REFERENCES -->
     <section id="references" class="references section">
       <div class="container section-title">
         <h2>References</h2>
@@ -257,11 +248,8 @@
               <div>
                 <h4>Engr. Rafael S. Diaz, PhD</h4>
                 <p class="position">Professor, Computer Engineering Dept.</p>
-                <p class="quote">"Bianca is an exceptionally dedicated student with a sharp aptitude for cybersecurity concepts. She consistently demonstrates a strong grasp of network protocols and an ability to solve complex technical problems."</p>
-                <p class="contact-info">
-                  <i class="bi bi-envelope"></i> rafael.diaz@dlsu.edu.ph<br>
-                  <i class="bi bi-telephone"></i> +63 917 123 4567
-                </p>
+                <p class="quote">"Bianca is an exceptionally dedicated student with a sharp aptitude for cybersecurity concepts."</p>
+                <p class="contact-info"><i class="bi bi-envelope"></i> rafael.diaz@dlsu.edu.ph<br><i class="bi bi-telephone"></i> +63 917 123 4567</p>
               </div>
             </div>
           </div>
@@ -271,11 +259,8 @@
               <div>
                 <h4>Ms. Clarissa V. Tan</h4>
                 <p class="position">Senior Cybersecurity Analyst / Internship Supervisor</p>
-                <p class="quote">"During her internship, Bianca displayed a professional work ethic and a keen eye for detail. She adapts quickly to new security tools and communicates complex ideas with clarity."</p>
-                <p class="contact-info">
-                  <i class="bi bi-envelope"></i> c.tan@technetworks.com<br>
-                  <i class="bi bi-telephone"></i> +63 918 987 6543
-                </p>
+                <p class="quote">"Bianca displayed a professional work ethic and a keen eye for detail during her internship."</p>
+                <p class="contact-info"><i class="bi bi-envelope"></i> c.tan@technetworks.com<br><i class="bi bi-telephone"></i> +63 918 987 6543</p>
               </div>
             </div>
           </div>
@@ -285,11 +270,8 @@
               <div>
                 <h4>Mr. Gabriel A. Lim</h4>
                 <p class="position">Capstone Project Adviser</p>
-                <p class="quote">"I mentored Bianca during her final project. She stands out for her ability to merge creative thinking with technical engineering. She is reliable, innovative, and a strong team player."</p>
-                <p class="contact-info">
-                  <i class="bi bi-envelope"></i> gabriel.lim@dlsu.edu.ph<br>
-                  <i class="bi bi-telephone"></i> +63 922 555 1234
-                </p>
+                <p class="quote">"She stands out for her ability to merge creative thinking with technical engineering."</p>
+                <p class="contact-info"><i class="bi bi-envelope"></i> gabriel.lim@dlsu.edu.ph<br><i class="bi bi-telephone"></i> +63 922 555 1234</p>
               </div>
             </div>
           </div>
@@ -297,142 +279,105 @@
       </div>
     </section>
 
+    <!-- CONTACT -->
     <section id="contact" class="contact section light-background">
-  <div class="container section-title">
-    <h2>Contact</h2>
-    <p>Get in touch with me. Fill out the form below and I'll get back to you as soon as possible.</p>
-  </div>
-  <div class="container">
-    <div class="row gy-4">
-      
-      <div class="col-lg-4">
-        <div class="info-wrap">
-          <div class="info-item">
-            <i class="bi bi-geo-alt"></i>
-            <div>
-              <h3>Address</h3>
-              <p>Manila, Philippines</p>
+      <div class="container section-title">
+        <h2>Contact</h2>
+        <p>Get in touch with me.</p>
+      </div>
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-4">
+            <div class="info-wrap">
+              <div class="info-item">
+                <i class="bi bi-geo-alt"></i>
+                <div><h3>Address</h3><p>Manila, Philippines</p></div>
+              </div>
+              <div class="info-item">
+                <i class="bi bi-telephone"></i>
+                <div><h3>Call Me</h3><p>+63 956 085 3210</p></div>
+              </div>
+              <div class="info-item">
+                <i class="bi bi-envelope"></i>
+                <div><h3>Email Me</h3><p>bianca_manganaan@dlsu.edu.ph</p></div>
+              </div>
+              <div class="info-item">
+                <i class="bi bi-clock"></i>
+                <div><h3>Response Time</h3><p>Within 24-48 hours</p></div>
+              </div>
             </div>
           </div>
-          <div class="info-item">
-            <i class="bi bi-telephone"></i>
-            <div>
-              <h3>Call Me</h3>
-              <p>+63 956 085 3210</p>
-            </div>
-          </div>
-          <div class="info-item">
-            <i class="bi bi-envelope"></i>
-            <div>
-              <h3>Email Me</h3>
-              <p>your.email@example.com</p>
-            </div>
-          </div>
-          <div class="info-item">
-            <i class="bi bi-clock"></i>
-            <div>
-              <h3>Response Time</h3>
-              <p>Within 24-48 hours</p>
+          <div class="col-lg-8">
+            <div class="contact-form">
+              <form action="#" method="POST">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="firstName">First Name <span class="required">*</span></label>
+                      <input type="text" id="firstName" name="firstName" class="form-control" placeholder="Enter your first name" required>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="lastName">Last Name <span class="required">*</span></label>
+                      <input type="text" id="lastName" name="lastName" class="form-control" placeholder="Enter your last name" required>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="email">Email Address <span class="required">*</span></label>
+                      <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" required>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="phone">Phone Number</label>
+                      <input type="tel" id="phone" name="phone" class="form-control" placeholder="Enter your phone number">
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="subject">Subject <span class="required">*</span></label>
+                  <select id="subject" name="subject" class="form-control" required>
+                    <option value="" disabled selected>Select a subject</option>
+                    <option value="general">General Inquiry</option>
+                    <option value="project">Project Collaboration</option>
+                    <option value="job">Job Opportunity</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="message">Your Message <span class="required">*</span></label>
+                  <textarea id="message" name="message" class="form-control" placeholder="Write your message here..." required></textarea>
+                </div>
+                <fieldset>
+                  <legend>I'm interested in:</legend>
+                  <div class="form-check"><input type="checkbox" id="i1" class="form-check-input"><label for="i1" class="form-check-label">Web Development</label></div>
+                  <div class="form-check"><input type="checkbox" id="i2" class="form-check-input"><label for="i2" class="form-check-label">Mobile Development</label></div>
+                  <div class="form-check"><input type="checkbox" id="i3" class="form-check-input"><label for="i3" class="form-check-label">Data Analysis</label></div>
+                  <div class="form-check"><input type="checkbox" id="i4" class="form-check-input"><label for="i4" class="form-check-label">Electronics / Hardware</label></div>
+                </fieldset>
+                <div class="form-group text-center">
+                  <button type="submit" class="btn-submit">
+                    <i class="bi bi-send"></i> Send Message
+                  </button>
+                </div>
+              </form>
             </div>
           </div>
         </div>
       </div>
+    </section>
 
-      <div class="col-lg-8">
-        <div class="contact-form">
-          <form action="#" method="POST">
-            
-            <div class="row">
-              <div class="col-md-6">
-                <div class="form-group">
-                  <label for="firstName">First Name <span class="required">*</span></label>
-                  <input type="text" id="firstName" name="firstName" class="form-control" placeholder="Enter your first name" required>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="form-group">
-                  <label for="lastName">Last Name <span class="required">*</span></label>
-                  <input type="text" id="lastName" name="lastName" class="form-control" placeholder="Enter your last name" required>
-                </div>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-md-6">
-                <div class="form-group">
-                  <label for="email">Email Address <span class="required">*</span></label>
-                  <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" required>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="form-group">
-                  <label for="phone">Phone Number</label>
-                  <input type="tel" id="phone" name="phone" class="form-control" placeholder="Enter your phone number">
-                </div>
-              </div>
-            </div>
-
-            <div class="form-group">
-              <label for="subject">Subject <span class="required">*</span></label>
-              <select id="subject" name="subject" class="form-control" required>
-                <option value="" disabled selected>Select a subject</option>
-                <option value="general">General Inquiry</option>
-                <option value="project">Project Collaboration</option>
-                <option value="job">Job Opportunity</option>
-                <option value="feedback">Feedback</option>
-                <option value="other">Other</option>
-              </select>
-            </div>
-
-            <div class="form-group">
-              <label for="message">Your Message <span class="required">*</span></label>
-              <textarea id="message" name="message" class="form-control" placeholder="Write your message here..." required></textarea>
-            </div>
-
-            <fieldset>
-              <legend>I'm interested in:</legend>
-              <div class="form-check">
-                <input type="checkbox" id="interest1" name="interests[]" value="web" class="form-check-input">
-                <label for="interest1" class="form-check-label">Web Development</label>
-              </div>
-              <div class="form-check">
-                <input type="checkbox" id="interest2" name="interests[]" value="mobile" class="form-check-input">
-                <label for="interest2" class="form-check-label">Mobile Development</label>
-              </div>
-              <div class="form-check">
-                <input type="checkbox" id="interest3" name="interests[]" value="data" class="form-check-input">
-                <label for="interest3" class="form-check-label">Data Analysis</label>
-              </div>
-              <div class="form-check">
-                <input type="checkbox" id="interest4" name="interests[]" value="electronics" class="form-check-input">
-                <label for="interest4" class="form-check-label">Electronics/Hardware</label>
-              </div>
-            </fieldset>
-
-            <div class="form-group text-center">
-              <button type="submit" class="btn-submit">
-                <i class="bi bi-send"></i> Send Message
-              </button>
-            </div>
-
-          </form>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
   </main>
 
   <footer class="footer">
-    <p class="copyright">&copy; 2025 Bianca Louise Manganaan. All rights reserved.</p>
-    <p class="credits">Computer Engineering Student &middot; De La Salle University Manila</p>
+    <p class="copyright">© 2025 Bianca Louise Manganaan. All rights reserved.</p>
   </footer>
 
-  <a href="#home" class="scroll-top" aria-label="Scroll to top">
-    <i class="bi bi-arrow-up"></i>
-  </a>
+  <a href="#home" class="scroll-top"><i class="bi bi-arrow-up"></i></a>
 
-  <script src="script.js"></script>
 </body>
 </html>
