@@ -10,15 +10,22 @@
   
   <link rel="stylesheet" href="style.css">
 </head>
-<body class="index-page">
+<body>
 
-  <header id="header" class="header dark-background d-flex flex-column">
+  <!-- Mobile nav toggle (visible < 1200px) -->
+  <button class="mobile-nav-toggle" aria-label="Toggle navigation">
+    <i class="bi bi-list"></i>
+  </button>
+
+  <header id="header" class="header d-flex flex-column">
     <div class="profile-img">
       <img src="assets/profile.jpg" alt="Bianca Manganaan">
     </div>
     <a href="#" class="logo d-flex align-items-center justify-content-center">
       <h1 class="sitename">Bianca Manganaan</h1>
     </a>
+    <div class="tagline">Computer Engineer</div>
+    <div class="divider"></div>
     <div class="social-links text-center">
       <a href="#" title="Facebook"><i class="bi bi-facebook"></i></a>
       <a href="#" title="Instagram"><i class="bi bi-instagram"></i></a>
@@ -40,12 +47,14 @@
 
   <main class="main">
 
-    <section id="home" class="hero section dark-background">
+    <section id="home" class="hero section">
+      <div class="dot-grid"></div>
       <img src="assets/homepage.jpg" alt="" class="hero-bg">
       <div class="container text-center">
         <h2>Bianca Louise Manganaan</h2>
         <p>I'm a <span>Computer Engineering Student</span></p>
       </div>
+      <div class="hero-scroll">scroll</div>
     </section>
 
     <section id="about" class="about section">
@@ -100,6 +109,7 @@
             <div class="portfolio-content">
               <img src="assets/pokemon.png" alt="">
               <div class="portfolio-info">
+                <span class="portfolio-number">01</span>
                 <h4>UDP Pokemon Game</h4>
                 <p>Designed and implemented a multiplayer Pokemon game using UDP networking</p>
               </div>
@@ -109,6 +119,7 @@
             <div class="portfolio-content">
               <img src="assets/payroll.jpg" alt="">
               <div class="portfolio-info">
+                <span class="portfolio-number">02</span>
                 <h4>Payroll Management System</h4>
                 <p>Developed a comprehensive payroll management system with employee data handling and salary calculations</p>
               </div>
@@ -118,6 +129,7 @@
             <div class="portfolio-content">
               <img src="assets/voltage.png" alt="">
               <div class="portfolio-info">
+                <span class="portfolio-number">03</span>
                 <h4>Voltage Regulator</h4>
                 <p>Designed and implemented a voltage regulator circuit using operational amplifiers</p>
               </div>
@@ -412,6 +424,15 @@
 </section>
   </main>
 
+  <footer class="footer">
+    <p class="copyright">&copy; 2025 Bianca Louise Manganaan. All rights reserved.</p>
+    <p class="credits">Computer Engineering Student &middot; De La Salle University Manila</p>
+  </footer>
 
+  <a href="#home" class="scroll-top" aria-label="Scroll to top">
+    <i class="bi bi-arrow-up"></i>
+  </a>
+
+  <script src="script.js"></script>
 </body>
 </html>
